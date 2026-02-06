@@ -1,33 +1,17 @@
 # Image Grid Layout 🖼️
 
-Bu proje, CSS Grid kullanarak oluşturulmuş, asimetrik ve modern bir resim galeri düzenidir. Standart eşit kutular yerine, belirli hücrelerin dikeyde genişlediği (`span`) daha dinamik bir yapı hedeflenmiştir.
+Bu proje, modern bir resim galerisi düzeni oluşturmak için **CSS Grid** yeteneklerini sergiler. Kenar sütunların dikeyde genişlediği, orta kısmın ise parçalı kaldığı asimetrik bir yapıya sahiptir.
 
-## 🚀 Özellikler
+## 🔗 Önemli Bağlantılar
 
-* **Asimetrik Tasarım:** Kenar sütunlardaki resimler tam boy kaplarken, orta sütun iki parçalı (üst-alt) yapıdadır.
-* **Responsive Yaklaşım:** Resimler `object-fit: cover` özelliği ile en-boy oranını bozmadan alanı doldurur.
-* **Temiz Kod:** Sadece HTML ve CSS kullanılarak, harici bir kütüphane gerektirmeden oluşturulmuştur.
+* **Canlı Demo:** [Projeyi Görüntüle](https://ahmetvhd.github.io/Image-Grid-Layout/)
+* **Proje Kaynağı:** [roadmap.sh - Image Grid](https://roadmap.sh/projects/image-grid)
 
-## 🛠️ Teknik Detaylar
+## 🛠️ Teknik Özet
 
-Projede temel olarak şu CSS Grid özellikleri kullanılmıştır:
+* **CSS Grid:** 3 sütunlu esnek yapı.
+* **Grid Spanning:** 1. ve 3. resimler için `grid-row: span 2`.
+* **Responsive:** Resimler `object-fit: cover` ile konteynere tam uyum sağlar.
 
-* **`display: grid;`**: Esnek ve kontrollü bir yerleşim planı için.
-* **`grid-template-columns: repeat(3, 1fr);`**: Alanı 3 eşit genişlikte sütuna böler.
-* **`grid-row: span 2;`**: Belirli resimlerin (1. ve 3. resimler) iki satırlık yüksekliği kaplamasını sağlar.
-* **`object-fit: cover;`**: Resimlerin konteyner dışına taşmadan ve bozulmadan hücreyi tam doldurması için.
-
-## 📸 Görünüm
-
-Düzen şu mantıkla çalışmaktadır:
-- **Sütun 1:** Tek resim (Boydan boya)
-- **Sütun 2:** İki resim (Üst üste)
-- **Sütun 3:** Tek resim (Boydan boya)
-
-## 💻 Kurulum ve Kullanım
-
-Projeyi yerel bilgisayarınızda çalıştırmak için:
-
-1. Depoyu klonlayın:
-   ```bash
-   git clone [https://github.com/ahmetvhd/Image-Grid-Layout.git](https://github.com/ahmetvhd/Image-Grid-Layout.git)
+---
+Geliştiren: [Ahmet Koca](https://github.com/ahmetvhd)
